@@ -245,6 +245,89 @@ https://www.eggradients.com/category/black-gradient */
 /* *********** END *********** */
 
 /* *********** ABOUT US PAGE *********** */
+
+/* *********** JS GAME *********** */
+
+/* This code style the box for the game to be placed in, using the "game" Div in the HTML. */
+#game{
+    width: 550px;
+    height: 200px;
+    border-radius: 15px;
+    border: ridge;
+    margin: auto;
+    background-color: #fafafa;
+    margin-right: 10px;
+}
+/*
+The #man div is the figure used that will
+jump over the box.
+*/
+#man{
+  width: 15px;
+  height: 50px;
+  background-color: #912209;
+  position:relative;
+  top: 125px;
+  border-radius: 150px;
+  left: 5px;
+}
+/*
+the .animate allocates the time in which the jump keyframe CSS runs for. 550ms, up (linear).
+*/
+.animate{
+    animation: jump 550ms linear;
+}
+/*
+the @keyframes controls the sequence in which an animation moves. from 0 - 100%, the "top" style of the jump function is altered.
+}
+*/
+@keyframes jump{
+    0%{top: 50px;}
+    50%{top: 130px;}
+    100%{top: 50px;}
+}
+/*
+Styling the red block for the game, that will have a set start position via "top" and "left" elements. animation is set at 0s until the click button is run, then it will be changed to 1s for it to move.
+*/
+#block{
+  background-color: #1c1c1a;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 105px;
+  left: 480px;
+  animation: block 0s infinite linear;
+}
+/*
+Another set of keyframes, to allocate the sequence of movements the red block will make. start a 500px "left", ending -5px "left"
+*/
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -5px}
+}
+/*
+The over div is a sentence, to be shown when game has ended. "GAME OVER!".
+*/
+#over {
+  display: none;
+  font-size: 50px;
+  font-family: fantasy;
+  text-align: center;
+}
+/*
+the button, that is clicked to start the game. some padding, and positioning. 
+*/
+#button1 {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* *********** JS GAME END *********** */
+
+
 .social-link {
   width: 30px;
   height: 30px;
