@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Fredericka the Great and Oswald fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- link for icon -->
+    <link rel="icon" href="icon/icon.ico">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gameCSS.css">
+
+
+    <!-- JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Test</title>
+
+
+</head>
+  <body>
+
+<!-- ************************ NAVBAR ************************ -->
+    <!-- NavBar from bootstrap4 library -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">
+        <img class="icon" src="icon/icon.png" alt="community-icon"></a>
+          <!-- hamburguer button -->
+          <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu/Top Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <a href="login.html"
+              class="btn btn-primary btn-lg"
+              role="button"
+              aria-pressed="true"
+              style="background-color: #990000; border: none;">Login
+              </a>
+            </form>
+          </div>
+    </nav>
+
+<!-- ************************ END OF NAVBAR ************************ -->
+
+<div class="bg-light">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6">
+        <script src="gameJS.js"></script>
+
+        <h1 class="display-4">Jump Game</h1>
+        <p class="lead text-muted mb-0">Be careful, after pressing "Click to jump!" that black square will be coming for you! You must keep clicking to jump out of the way, or you lose!</p>
+        <br><br><br>
+
+        <div id="game" onclick="jump();">
+          <p id="over"></p>
+          <!--The button, once click will alter the CSS style for the 'block, to start the game.'-->
+          <button type="button" id="button1"
+          onclick="document.getElementById('block').style.animation = 'block 1.5s infinite linear'">
+          Click to jump!</button>
+          <div id="man"></div>
+          <div id="block"></div>
+        </div>
+        <br><br><br>
+
+
+        <h1 class="display-4">About us!</h1>
+        <p class="lead text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block"><img src="index-images\community-kids.jpg" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">Lorem ipsum dolor sit amet</h2>
+        <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="index-images\community-kids2.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+</div>
+
+<div class="bg-light py-5">
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Our team</h2>
+        <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Ketheleen Bazan</h5><span class="small text-uppercase text-muted">Community Member - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\facebook.png" alt=""><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\twitter.png" alt=""><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\instagram.png" alt=""><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\linkedin.png" alt=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Joseph Nguyen</h5><span class="small text-uppercase text-muted">Community Member - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\facebook.png" alt=""><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\twitter.png" alt=""><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\instagram.png" alt=""><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\linkedin.png" alt=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Shane Burk</h5><span class="small text-uppercase text-muted">Community Member - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\facebook.png" alt=""><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\twitter.png" alt=""><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\instagram.png" alt=""><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><img src="index-images\linkedin.png" alt=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+
+    </div>
+  </div>
+</div>
+
+
+    <!-- Script -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+         </script>
+         <script src="script.js"></script>
+
+  </body>
+</html>
