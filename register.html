@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Google fonts Open Sans and Oswald -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- link for icon -->
+    <link rel="icon" href="icon/icon.ico">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <title>Sign Up</title>
+</head>
+  <body>
+
+    <!-- navbar -->
+    <!-- NavBar from bootstrap4 library -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html"><img class="icon" src="icon/icon.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="btn" href="login.html" role="button">Sign In</a>
+        </form>
+      </div>
+    </nav>
+<!-- END -->
+
+
+
+<!-- Register section using bootstrap -->
+<!-- Section: Design Block -->
+    <section class="text-center">
+      <!-- Background image -->
+      <div class="img-header-register" style="
+        background-image: url('register-images/children2.jpg');
+        height: 500px;">
+      </div>
+
+      <!-- Background image -->
+      <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);">
+        <div class="card-body py-5 px-md-5">
+
+          <img class="logo-register" src="icon\icon.png" alt="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <h1 class="fw-bold mb-5 gFonts">Sign up now</h1>
+                <form class="container" id="needs-validation" novalidate>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                        <div class="invalid-feedback">
+                          Please provide your First Name.
+                        </div>
+                          <label class="text-inverse" for="validationCustom01">First Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-outline">
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                        <div class="invalid-feedback">
+                          Please provide your Last Name.
+                        </div>
+                          <label class="text-inverse" for="validationCustom02">Last Name</label>
+                      </div>
+                    </div>
+                  </div>
+
+            <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid Email.
+                      </div>
+                    <label class="text-inverse" for="inputEmail4">Email</label>
+                  </div>
+
+            <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input type="password" class="form-control" id="inputpassword" placeholder="password" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid password.
+                    </div>
+                    <label class="text-inverse" for="inputpassword">Password</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" class="form-control" id="inputpassword" placeholder="re-enter password" required>
+                      <div class="invalid-feedback">
+                        Please confirm a valid password.
+                      </div>
+                     <label class="text-inverse" for="inputpassword">Re-enter Password</label>
+                  </div>
+
+
+
+            <!-- Submit button -->
+                  <button type="submit" class="btn btn-block mb-4">
+                    Sign up
+                  </button>
+
+            <!-- Register buttons -->
+                  <div class="text-center">
+                    <p>or sign up with:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"><img src="icon\fb-no-background.png" alt=""></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"><img src="icon\google-no-background.png" alt=""></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Section: Design Block -->
+<!-- END -->
+
+<!-- JAVASCRIPT CALL -->
+<!-- script call -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="script.js"></script>
+<!-- end -->
+
+ </body>
+</html>

@@ -1,5 +1,19 @@
-/* ************************ NAVBAR ************************ */
 
+/* body fonts */
+#text, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gFonts{
+  font-family: 'Oswald', sans-serif;
+}
+
+.btnDom{
+  margin: 10px auto;
+}
+
+
+/* ************************ NAVBAR ************************ */
 /* navbar gradient color from google
 https://www.eggradients.com/category/black-gradient */
 
@@ -20,7 +34,8 @@ https://www.eggradients.com/category/black-gradient */
 }
 /* ************************ END OF NAVBAR ************************ */
 
-/* ************************ END OF CAROUSEL ************************ */
+
+/* ************************ CAROUSEL ************************ */
 .d-block{
   width: 100%;
   height: auto;
@@ -33,7 +48,6 @@ https://www.eggradients.com/category/black-gradient */
 .container {
   justify-content: space-between;
   width: 80%;
-
 }
 
 .img-hover-item{
@@ -51,12 +65,15 @@ https://www.eggradients.com/category/black-gradient */
   transform: scale(1.1);
 }
 
+.gallery{
+  margin: 10px auto;
+}
+
 /* ************************ END GALLERY OF IMAGES - JS ************************ */
 
 
 
 /* ************************ FLEBOX ************************ */
-
 .col-md-6 img{
   background-color: black;
   background-color:rgba(0,0,0,0.5);
@@ -77,10 +94,9 @@ https://www.eggradients.com/category/black-gradient */
 .display-6{
   color: #990000;
 }
-
-
-
 /* ************************ END OF FLEXBOX ************************ */
+
+
 
 /* ************************ DOM MANIPULATION ************************ */
 /* resizing logo and editing style to fit the page design*/
@@ -91,13 +107,11 @@ https://www.eggradients.com/category/black-gradient */
   display: flex;
   margin: 25px auto auto auto;
 }
-
 /* ************************ END ************************ */
 
 
 /* ************************ NEWSLETTER ************************ */
 /* Newsletter used from bootstrap */
-
 .newsletter-subscribe {
   color: #313437;
   background-color: #ffffff;
@@ -184,6 +198,7 @@ https://www.eggradients.com/category/black-gradient */
   padding-left: 20px;
 }
 /* ************************ END OF NEWSLETTER ************************ */
+
 
 
 /* ******* Button using JS to go to the top of the page ******* */
@@ -315,7 +330,14 @@ the button, that is clicked to start the game. some padding, and positioning.
 
 /* *********** JS GAME END *********** */
 
+/* BUTTON - DOM MANIPULATION */
+.btnDom{
+  margin: 10px auto;
+}
+/* end */
 
+
+/* *********** SOCIAL LINKS - TEAM CONTAINER *********** */
 .social-link {
   width: 30px;
   height: 30px;
@@ -339,15 +361,7 @@ the button, that is clicked to start the game. some padding, and positioning.
 .col-xl-3{
   margin: auto;
 }
-
 /* *********** END OF ABOUT US PAGE *********** */
-
-
-/* *********** CONTACT US PAGE *********** */
-
-
-
-/* *********** END OF CONTACT US PAGE *********** */
 
 
 
@@ -376,6 +390,8 @@ the button, that is clicked to start the game. some padding, and positioning.
   background-color: black;
   color: white;
 }
+/* ************************ END OF LOGIN PAGE ************************ */
+
 
 
 /* ************************ REGISTER PAGE ************************ */
@@ -390,20 +406,26 @@ the button, that is clicked to start the game. some padding, and positioning.
 .logo-register{
   width: 150px;
 }
+/* ************************ END OF REGISTER PAGE ************************ */
 
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+/* MEDIA QUERIES SECTION */
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+  /* MAIN PAGE - INDEX */
+  /* carousel */
+    .bd-example{
+      width: 85%;
+      margin: auto;
+    }
+
+  /* FLEX BOX */
   .container-flex-pics{
-    width: 65%;
+    width: 75%;
     height: auto;
     margin: auto;
   }
-
-  .bd-example{
-    width: 70%;
-    margin: auto;
-  }
 }
-
 
 
 /* tablet view (IPAD)*/
@@ -465,5 +487,4 @@ the button, that is clicked to start the game. some padding, and positioning.
       width: 90%;
     }
 }
-
   /* END */

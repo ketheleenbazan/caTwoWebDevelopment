@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Fredericka the Great and Oswald fonts  -->
+
+  <!-- Google fonts Open Sans and Oswald -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap" rel="stylesheet">
 
     <!-- link for icon -->
     <link rel="icon" href="icon/icon.ico">
 
     <!-- css link -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gameCSS.css">
 
 
     <!-- JavaScript -->
-    <script src="gameJS.js" charset="utf-8"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -80,7 +81,7 @@
           <div class="col-lg-6">
             <script src="script.js"></script>
 
-          <h1 class="display-4 text-center">Jump Game</h1>
+          <h1 class="display-4 text-center gFonts">Jump Game</h1>
           <p class="lead text-muted mb-0">Be careful, after pressing "Click to jump!" that black square will be coming for you! You must keep clicking to jump out of the way, or you lose!</p>
           <br><br><br>
 
@@ -106,14 +107,14 @@
       <div class="container py-5">
         <div class="row h-100 align-items-center py-5">
           <div class="col-lg-6">
-            <h1 class="display-4">About us!</h1>
+            <h1 class="display-4 gFonts">About us</h1>
             <p class="lead text-muted mb-0">
               Mission Africa was founded in 2012 after a trip that one of our founders made to Mozambique at the invitation of a local institution. As soon as she returned to Ireland, the idea came up with some friends, then founded the ONG Mission Africa, with the aim of transforming the reality of people who live in poverty and vulnerability.</p>
             <p class="lead text-muted mb-0">
               Mission Africa has its headquarters in Dublin city and we currently have work being carried out in Ireland and Mozambique.
             </p>
           </div>
-          <div class="col-lg-6 d-none d-lg-block"><img src="about-images\community-kids3.jpg" alt="kids on the camera" class="img-fluid"></div>
+          <div class="col-lg-6 d-none d-lg-block"><img src="about-images\community-kids3.jpg" alt="kids on the camera" class="img-fluid "></div>
         </div>
       </div>
     </div>
@@ -142,8 +143,8 @@
         <div class="row d-flex justify-content-center">
           <section>
           <img id="hands" src="about-images/hands1.jpg" alt="alternating icons bug bomb"><br>
-        	  <button class="btn" onclick="getHand1()">Click Me!</button>
-        	  <button class="btn" onclick="getHand2()">Go Back!</button>
+        	  <button class="btn btnDom" onclick="getHand1()">Click Me!</button>
+        	  <button class="btn btnDom" onclick="getHand2()">Go Back!</button>
           </section>
         </div>
       </div>
@@ -155,7 +156,7 @@
       <div class="container py-5">
         <div class="row mb-4">
           <div class="col-lg-5">
-            <h2 class="display-4 font-weight-light">Our team</h2>
+            <h2 class="display-4 font-weight-light gFonts">Our team</h2>
           </div>
         </div>
 
@@ -163,7 +164,7 @@
           <!-- Team item-->
           <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-              <h5 class="mb-0">Ketheleen Bazan</h5><span class="small text-uppercase text-muted">Community Member - Founder</span>
+              <h5 class="mb-0 ">Ketheleen Bazan</h5><span class="small text-uppercase text-muted">Community Member - Founder</span>
               <ul class="social mb-0 list-inline mt-3">
                 <li class="list-inline-item"><a href="#" class="social-link"><img src="icon\facebook.png" alt=""><i class="fa fa-facebook-f"></i></a></li>
                 <li class="list-inline-item"><a href="#" class="social-link"><img src="icon\twitter.png" alt=""><i class="fa fa-twitter"></i></a></li>
@@ -262,4 +263,3 @@
 
   </body>
 </html>
-
