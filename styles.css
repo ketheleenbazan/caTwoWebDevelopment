@@ -2,6 +2,7 @@
 
 /* navbar gradient color from google
 https://www.eggradients.com/category/black-gradient */
+
 .navbar{
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
@@ -19,7 +20,13 @@ https://www.eggradients.com/category/black-gradient */
 }
 /* ************************ END OF NAVBAR ************************ */
 
+/* ************************ END OF CAROUSEL ************************ */
+.d-block{
+  width: 100%;
+  height: auto;
+}
 
+/* ************************ END OF CAROUSEL ************************ */
 
 
 /* ************************ GALLERY OF IMAGES - JS ************************ */
@@ -44,7 +51,6 @@ https://www.eggradients.com/category/black-gradient */
   transform: scale(1.1);
 }
 
-
 /* ************************ END GALLERY OF IMAGES - JS ************************ */
 
 
@@ -57,12 +63,11 @@ https://www.eggradients.com/category/black-gradient */
   border-radius:16px;
   box-shadow:0 0 16px rgba(0,0,0,0.5);
   width: 450px;
-  height: 400px;
+  height: auto;
 }
 
 .container-flex-pics{
-  width:80%;
-  margin: auto;
+  margin: 15px;
 }
 
 .lead, .display-6{
@@ -72,6 +77,9 @@ https://www.eggradients.com/category/black-gradient */
 .display-6{
   color: #990000;
 }
+
+
+
 /* ************************ END OF FLEXBOX ************************ */
 
 /* ************************ DOM MANIPULATION ************************ */
@@ -383,15 +391,23 @@ the button, that is clicked to start the game. some padding, and positioning.
   width: 150px;
 }
 
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  .container-flex-pics{
+    width: 65%;
+    height: auto;
+    margin: auto;
+  }
+
+  .bd-example{
+    width: 70%;
+    margin: auto;
+  }
+}
 
 
 
 /* tablet view (IPAD)*/
   @media only screen and (max-width: 768px) {
-
-
-
-
     /* MAIN PAGE - INDEX */
     /* GALLERY */
     [class*="img-hover-item"]{
@@ -401,37 +417,36 @@ the button, that is clicked to start the game. some padding, and positioning.
       margin: 25px auto;
     }
     /* FLEX BOX */
-    .col-md-6 img{
-      width: 450px;
-      height: 370px;
+    [class*="w-100"]{
+      width: 350px;
+      height: auto;
     }
+
 
 
     /* CONTACT US PAGE */
     .mx-auto{
       width: 80%;
     }
-
   }
-
 
     /* For mobile phones view: */
   @media only screen and (max-width: 550px) {
 
     /* INDEX PAGE */
-
-
-
     /* GALLERY */
     [class*="img-hover-item"]{
-      width: 350px;
-      height: 490px;
+      width: 230px;
+      height: 340px;
       justify-content: center;
       display: flex;
       margin: 25px auto;
     }
 
-
+    [class*="w-100"]{
+      width: 100%;
+      height: auto;
+    }
 
     #game{
         width: 100%;
@@ -450,12 +465,5 @@ the button, that is clicked to start the game. some padding, and positioning.
       width: 90%;
     }
 }
-
-    /* LOGIN PAGE */
-/*
-    [class*="card-body"] {
-      width: 100%;
-    }
-  } */
 
   /* END */

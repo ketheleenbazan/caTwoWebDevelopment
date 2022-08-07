@@ -34,7 +34,6 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
@@ -78,7 +77,7 @@ function topFunction() {
 	}
 //END ABOUT PAGE
 
-//CONTACT PAGE
+/* CONTACT PAGE */
 //DOM manipulation
 //change html font colors
 function changeHeading() {
